@@ -164,7 +164,7 @@
   height: auto;
   padding: 6px 18px; }
 
-[data-type="atomic-blocks/ab-layouts"] {
+[data-type="beans-blocks-/ab-layouts"] {
   -webkit-animation: 2s ease 0s normal forwards 1 fadein;
   animation: 2s ease 0s normal forwards 1 fadein; }
 
@@ -264,7 +264,7 @@
     .ab-layout-modal-footer .ab-pro-feedback svg {
       left: -22px; }
 
-div[data-type*="atomic-blocks/ab-columns"][data-align="full"],
-div[data-type*="atomic-blocks/ab-container"][data-align="full"] {
+div[data-type*="beans-blocks-/ab-columns"][data-align="full"],
+div[data-type*="beans-blocks-/ab-container"][data-align="full"] {
   margin-top: auto;
   margin-bottom: auto; }

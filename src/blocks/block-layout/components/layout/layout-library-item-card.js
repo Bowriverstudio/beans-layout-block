@@ -51,7 +51,7 @@ export default class LayoutLibraryItemCard extends Component {
 
 							<div className="ab-layout-design-info">
 								<div className="ab-layout-design-title">{ this.props.name }
-									{ <Tooltip text={ this.props.context.favoriteKeys.includes( this.props.itemKey ) ? __( 'Remove from Favorites', 'atomic-blocks' ) : __( 'Add to Favorites', 'atomic-blocks' ) }>
+									{ <Tooltip text={ this.props.context.favoriteKeys.includes( this.props.itemKey ) ? __( 'Remove from Favorites', 'beans-blocks-' ) : __( 'Add to Favorites', 'beans-blocks-' ) }>
 										<Button
 											key={ 'buttonFavorite' }
 											className='ab-layout-favorite-button'

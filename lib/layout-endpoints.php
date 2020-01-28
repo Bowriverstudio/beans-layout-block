@@ -5,7 +5,7 @@
  * @package AtomicBlocks
  */
 
-namespace UIKIT3\Gutenberg\Layouts;
+namespace Beans\Layout\Block;
 
 use \WP_REST_Response;
 use \WP_REST_Server;

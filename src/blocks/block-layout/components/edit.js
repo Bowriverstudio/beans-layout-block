@@ -45,8 +45,8 @@ export default class Edit extends Component {
 				</BlockControls>
 				<Placeholder
 					key="placeholder"
-					label={ __( 'Layout Selector', 'atomic-blocks' ) }
-					instructions={ __( 'Launch the layout library to browse pre-designed sections.', 'atomic-blocks' ) }
+					label={ __( 'Layout Selector', 'beans-blocks-' ) }
+					instructions={ __( 'Launch the layout library to browse pre-designed sections.', 'beans-blocks-' ) }
 					className={ 'ab-layout-selector-placeholder' }
 					icon="layout"
 				>

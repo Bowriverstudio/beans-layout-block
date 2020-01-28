@@ -94,7 +94,7 @@ export default class LayoutLibrary extends Component {
 						<div className="ab-layout-modal-header">
 							<SelectControl
 								key={ 'layout-library-select-categories-' + this.props.clientId }
-								label={ __( 'Layout Categories', 'atomic-blocks' ) }
+								label={ __( 'Layout Categories', 'beans-blocks-' ) }
 								value={ this.state.category }
 								options={ catOptions }
 								onChange={ value => this.setState({ category: value }) }
@@ -103,7 +103,7 @@ export default class LayoutLibrary extends Component {
 								key={ 'layout-library-search-layouts-' + this.props.clientId }
 								type="text"
 								value={ this.state.search }
-								placeholder={ __( 'Search Layouts', 'atomic-blocks' ) }
+								placeholder={ __( 'Search Layouts', 'beans-blocks-' ) }
 								onChange={ value => this.setState({ search: value }) }
 							/>
 						</div>
@@ -113,7 +113,7 @@ export default class LayoutLibrary extends Component {
 
 							{ /* Grid width view. */ }
 							<div className={ 'ab-layout-view-right' }>
-								<Tooltip key={ 'layout-library-grid-view-tooltip-' + this.props.clientId } text={ __( 'Grid View', 'atomic-blocks' ) }>
+								<Tooltip key={ 'layout-library-grid-view-tooltip-' + this.props.clientId } text={ __( 'Grid View', 'beans-blocks-' ) }>
 									<Button
 										key={ 'layout-library-grid-view-button-' + this.props.clientId }
 										className={ classnames(
@@ -134,7 +134,7 @@ export default class LayoutLibrary extends Component {
 								</Tooltip>
 
 								{ /* Full width layout view. */ }
-								<Tooltip key={ 'layout-library-full-view-tooltip-' + this.props.clientId } text={ __( 'Full Width View', 'atomic-blocks' ) }>
+								<Tooltip key={ 'layout-library-full-view-tooltip-' + this.props.clientId } text={ __( 'Full Width View', 'beans-blocks-' ) }>
 									<Button
 										key={ 'layout-library-full-view-button-' + this.props.clientId }
 										className={ classnames(
@@ -159,14 +159,14 @@ export default class LayoutLibrary extends Component {
 					<Fragment>
 						{ /* Header for reusable blocks. */ }
 						<div className="ab-layout-modal-header ab-layout-modal-header-reusable">
-							<div>{ __( 'Reusable Blocks', 'atomic-blocks' ) }</div>
+							<div>{ __( 'Reusable Blocks', 'beans-blocks-' ) }</div>
 							<div class="ab-layout-modal-header-reusable-actions">
 								<a
 									className="editor-inserter__manage-reusable-blocks block-editor-inserter__manage-reusable-blocks"
 									href={ addQueryArgs( 'edit.php', { post_type: 'wp_block' }) }
 									target="_blank"
 								>
-									{ __( 'Manage All Reusable Blocks', 'atomic-blocks' ) }
+									{ __( 'Manage All Reusable Blocks', 'beans-blocks-' ) }
 								</a>
 							</div>
 						</div>
@@ -182,7 +182,7 @@ export default class LayoutLibrary extends Component {
 								'current-tab-' + this.props.currentTab,
 								'full' === this.state.activeView ? 'ab-layout-view-full' : null,
 							) }
-							aria-label={ __( 'Layout Options', 'atomic-blocks' ) }
+							aria-label={ __( 'Layout Options', 'beans-blocks-' ) }
 						>
 							{ map( this.props.data, ({ name, key, image, content, category, keywords }) => {
 

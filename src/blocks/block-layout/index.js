@@ -19,15 +19,15 @@ const { registerBlockType } = wp.blocks;
 /**
  * Register the Layout block
  */
-registerBlockType( 'atomic-blocks/ab-layouts', {
-	title: __( 'AB Layouts', 'atomic-blocks' ),
-	description: __( 'Add a pre-defined section or layout to posts and pages.', 'atomic-blocks' ),
+registerBlockType( 'beans-blocks-/ab-layouts', {
+	title: __( 'AB Layouts', 'beans-blocks-' ),
+	description: __( 'Add a pre-defined section or layout to posts and pages.', 'beans-blocks-' ),
 	icon: 'layout',
 	category: 'common',
 	keywords: [
-		__( 'layout', 'atomic-blocks' ),
-		__( 'column', 'atomic-blocks' ),
-		__( 'section', 'atomic-blocks' )
+		__( 'layout', 'beans-blocks-' ),
+		__( 'column', 'beans-blocks-' ),
+		__( 'section', 'beans-blocks-' )
 	],
 
 	/* Render the block components. */
@@ -56,7 +56,7 @@ function appendImportButton() {
 	}
 	let buttonDiv = document.createElement( 'div' );
 	let html = '<div class="ab-toolbar-insert-layout">';
-	html += `<button id="abLayoutInsertButton" class="components-button components-icon-button" aria-label="${ __( 'Insert Layout', 'atomic-blocks' ) }"><i class="dashicons dashicons-layout ab-toolbar-insert-layout-button"></i> ${ __( 'Layouts', 'atomic-blocks' ) }</button>`;
+	html += `<button id="abLayoutInsertButton" class="components-button components-icon-button" aria-label="${ __( 'Insert Layout', 'beans-blocks-' ) }"><i class="dashicons dashicons-layout ab-toolbar-insert-layout-button"></i> ${ __( 'Layouts', 'beans-blocks-' ) }</button>`;
 	html += '</div>';
 	buttonDiv.innerHTML = html;
 	toolbar.appendChild( buttonDiv );
@@ -67,6 +67,6 @@ function appendImportButton() {
  * Add the AB Layout block on click.
  */
 function abInsertLayout() {
-	let block = wp.blocks.createBlock( 'atomic-blocks/ab-layouts' );
+	let block = wp.blocks.createBlock( 'beans-blocks-/ab-layouts' );
 	wp.data.dispatch( 'core/editor' ).insertBlocks( block );
 }

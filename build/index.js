@@ -7443,8 +7443,8 @@ function (_Component) {
         controls: []
       })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Placeholder, {
         key: "placeholder",
-        label: __('Layout Selector', 'atomic-blocks'),
-        instructions: __('Launch the layout library to browse pre-designed sections.', 'atomic-blocks'),
+        label: __('Layout Selector', 'beans-blocks-'),
+        instructions: __('Launch the layout library to browse pre-designed sections.', 'beans-blocks-'),
         className: 'ab-layout-selector-placeholder',
         icon: "layout"
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(_layouts_provider__WEBPACK_IMPORTED_MODULE_7__["LayoutsContext"].Consumer, {
@@ -7558,7 +7558,7 @@ function (_Component) {
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("div", {
         className: "ab-layout-design-title"
       }, this.props.name, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Tooltip, {
-        text: this.props.context.favoriteKeys.includes(this.props.itemKey) ? __('Remove from Favorites', 'atomic-blocks') : __('Add to Favorites', 'atomic-blocks')
+        text: this.props.context.favoriteKeys.includes(this.props.itemKey) ? __('Remove from Favorites', 'beans-blocks-') : __('Add to Favorites', 'beans-blocks-')
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Button, {
         key: 'buttonFavorite',
         className: "ab-layout-favorite-button",
@@ -7661,7 +7661,7 @@ function (_Component) {
           action: 'edit'
         }),
         target: "_blank"
-      }, __('Edit', 'atomic-blocks'))))));
+      }, __('Edit', 'beans-blocks-'))))));
     }
   }]);
 
@@ -7923,7 +7923,7 @@ function (_Component) {
         className: "ab-layout-modal-header"
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(SelectControl, {
         key: 'layout-library-select-categories-' + this.props.clientId,
-        label: __('Layout Categories', 'atomic-blocks'),
+        label: __('Layout Categories', 'beans-blocks-'),
         value: this.state.category,
         options: catOptions,
         onChange: function onChange(value) {
@@ -7935,7 +7935,7 @@ function (_Component) {
         key: 'layout-library-search-layouts-' + this.props.clientId,
         type: "text",
         value: this.state.search,
-        placeholder: __('Search Layouts', 'atomic-blocks'),
+        placeholder: __('Search Layouts', 'beans-blocks-'),
         onChange: function onChange(value) {
           return _this2.setState({
             search: value
@@ -7947,7 +7947,7 @@ function (_Component) {
         className: 'ab-layout-view-right'
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Tooltip, {
         key: 'layout-library-grid-view-tooltip-' + this.props.clientId,
-        text: __('Grid View', 'atomic-blocks')
+        text: __('Grid View', 'beans-blocks-')
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Button, {
         key: 'layout-library-grid-view-button-' + this.props.clientId,
         className: classnames__WEBPACK_IMPORTED_MODULE_7___default()('grid' === this.state.activeView ? 'is-primary' : null, 'ab-layout-grid-view-button'),
@@ -7963,7 +7963,7 @@ function (_Component) {
         className: 'ab-layout-icon-grid'
       }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Tooltip, {
         key: 'layout-library-full-view-tooltip-' + this.props.clientId,
-        text: __('Full Width View', 'atomic-blocks')
+        text: __('Full Width View', 'beans-blocks-')
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Button, {
         key: 'layout-library-full-view-button-' + this.props.clientId,
         className: classnames__WEBPACK_IMPORTED_MODULE_7___default()('full' === this.state.activeView ? 'is-primary' : null, 'ab-layout-full-view-button'),
@@ -7979,7 +7979,7 @@ function (_Component) {
         className: 'ab-layout-icon-tablet'
       })))))) : Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Fragment, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("div", {
         className: "ab-layout-modal-header ab-layout-modal-header-reusable"
-      }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("div", null, __('Reusable Blocks', 'atomic-blocks')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("div", {
+      }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("div", null, __('Reusable Blocks', 'beans-blocks-')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("div", {
         class: "ab-layout-modal-header-reusable-actions"
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("a", {
         className: "editor-inserter__manage-reusable-blocks block-editor-inserter__manage-reusable-blocks",
@@ -7987,11 +7987,11 @@ function (_Component) {
           post_type: 'wp_block'
         }),
         target: "_blank"
-      }, __('Manage All Reusable Blocks', 'atomic-blocks'))))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(_layouts_provider__WEBPACK_IMPORTED_MODULE_9__["LayoutsContext"].Consumer, null, function (context) {
+      }, __('Manage All Reusable Blocks', 'beans-blocks-'))))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(_layouts_provider__WEBPACK_IMPORTED_MODULE_9__["LayoutsContext"].Consumer, null, function (context) {
         return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(ButtonGroup, {
           key: 'layout-library-context-button-group-' + _this2.props.clientId,
           className: classnames__WEBPACK_IMPORTED_MODULE_7___default()('ab-layout-choices', 'current-tab-' + _this2.props.currentTab, 'full' === _this2.state.activeView ? 'ab-layout-view-full' : null),
-          "aria-label": __('Layout Options', 'atomic-blocks')
+          "aria-label": __('Layout Options', 'beans-blocks-')
         }, lodash_map__WEBPACK_IMPORTED_MODULE_6___default()(_this2.props.data, function (_ref) {
           var name = _ref.name,
               key = _ref.key,
@@ -8109,22 +8109,22 @@ function (_Component) {
 
       var tabs = [{
         name: 'ab-layout-tab-sections',
-        title: __('Sections', 'atomic-blocks'),
+        title: __('Sections', 'beans-blocks-'),
         className: 'ab-layout-tab-sections'
       }, {
         name: 'ab-layout-tab-layouts',
-        title: __('Layouts', 'atomic-blocks'),
+        title: __('Layouts', 'beans-blocks-'),
         className: 'ab-layout-tab-layouts'
       }, {
         name: 'ab-layout-tab-favorites',
-        title: __('Favorites', 'atomic-blocks'),
+        title: __('Favorites', 'beans-blocks-'),
         className: 'ab-layout-tab-favorites'
       }];
 
       if (this.props.context.reusableBlocks.length) {
         tabs.push({
           name: 'ab-layout-tab-reusable-blocks',
-          title: __('Reusable Blocks', 'atomic-blocks'),
+          title: __('Reusable Blocks', 'beans-blocks-'),
           className: 'ab-layout-tab-reusable-blocks'
         });
       }
@@ -8141,10 +8141,10 @@ function (_Component) {
             modalOpen: true
           });
         }
-      }, __('Layout Library', 'atomic-blocks')), this.state.modalOpen ? Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Modal, {
+      }, __('Layout Library', 'beans-blocks-')), this.state.modalOpen ? Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Modal, {
         key: 'layout-modal-modal-component-' + this.props.clientId,
         className: "ab-layout-modal",
-        title: __('Layout Selector', 'atomic-blocks'),
+        title: __('Layout Selector', 'beans-blocks-'),
         onRequestClose: function onRequestClose() {
           return _this2.setState({
             modalOpen: false,
@@ -8156,18 +8156,18 @@ function (_Component) {
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Dashicon, {
         icon: 'editor-help'
       }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("a", {
-        href: 'https://github.com/studiopress/atomic-blocks/wiki/Layouts-Block#adding-custom-sections-and-layouts-to-the-library',
+        href: 'https://github.com/studiopress/beans-blocks-/wiki/Layouts-Block#adding-custom-sections-and-layouts-to-the-library',
         target: "_blank"
-      }, __('Add Custom Layouts', 'atomic-blocks')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("span", null, "\xB7"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("a", {
-        href: 'https://github.com/studiopress/atomic-blocks/wiki/Reusable-Blocks',
+      }, __('Add Custom Layouts', 'beans-blocks-')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("span", null, "\xB7"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("a", {
+        href: 'https://github.com/studiopress/beans-blocks-/wiki/Reusable-Blocks',
         target: "_blank"
-      }, __('Reusable Blocks', 'atomic-blocks')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("a", {
+      }, __('Reusable Blocks', 'beans-blocks-')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])("a", {
         href: 'https://wpengine.co1.qualtrics.com/jfe/form/SV_bj6kzZDz1Egcc17',
         target: "_blank",
         className: "ab-pro-feedback"
       }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(Dashicon, {
         icon: 'admin-comments'
-      }), " ", __('Send Feedback', 'atomic-blocks'))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(TabPanel, {
+      }), " ", __('Send Feedback', 'beans-blocks-'))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__["createElement"])(TabPanel, {
         key: 'layout-modal-tabpanel-' + this.props.clientId,
         className: "ab-layout-modal-panel",
         activeClass: "ab-layout-modal-active-tab",
@@ -8178,7 +8178,7 @@ function (_Component) {
         },
         tabs: tabs
       }, function (tab) {
-        var tabContent = __('Default tab content', 'atomic-blocks');
+        var tabContent = __('Default tab content', 'beans-blocks-');
 
         if (tab.name) {
           if ('ab-layout-tab-sections' === tab.name) {
@@ -8631,12 +8631,12 @@ var registerBlockType = wp.blocks.registerBlockType;
  * Register the Layout block
  */
 
-registerBlockType('atomic-blocks/ab-layouts', {
-  title: __('AB Layouts', 'atomic-blocks'),
-  description: __('Add a pre-defined section or layout to posts and pages.', 'atomic-blocks'),
+registerBlockType('beans-blocks-/ab-layouts', {
+  title: __('AB Layouts', 'beans-blocks-'),
+  description: __('Add a pre-defined section or layout to posts and pages.', 'beans-blocks-'),
   icon: 'layout',
   category: 'common',
-  keywords: [__('layout', 'atomic-blocks'), __('column', 'atomic-blocks'), __('section', 'atomic-blocks')],
+  keywords: [__('layout', 'beans-blocks-'), __('column', 'beans-blocks-'), __('section', 'beans-blocks-')],
 
   /* Render the block components. */
   edit: function edit(props) {
@@ -8666,7 +8666,7 @@ function appendImportButton() {
 
   var buttonDiv = document.createElement('div');
   var html = '<div class="ab-toolbar-insert-layout">';
-  html += "<button id=\"abLayoutInsertButton\" class=\"components-button components-icon-button\" aria-label=\"".concat(__('Insert Layout', 'atomic-blocks'), "\"><i class=\"dashicons dashicons-layout ab-toolbar-insert-layout-button\"></i> ").concat(__('Layouts', 'atomic-blocks'), "</button>");
+  html += "<button id=\"abLayoutInsertButton\" class=\"components-button components-icon-button\" aria-label=\"".concat(__('Insert Layout', 'beans-blocks-'), "\"><i class=\"dashicons dashicons-layout ab-toolbar-insert-layout-button\"></i> ").concat(__('Layouts', 'beans-blocks-'), "</button>");
   html += '</div>';
   buttonDiv.innerHTML = html;
   toolbar.appendChild(buttonDiv);
@@ -8678,7 +8678,7 @@ function appendImportButton() {
 
 
 function abInsertLayout() {
-  var block = wp.blocks.createBlock('atomic-blocks/ab-layouts');
+  var block = wp.blocks.createBlock('beans-blocks-/ab-layouts');
   wp.data.dispatch('core/editor').insertBlocks(block);
 }
 

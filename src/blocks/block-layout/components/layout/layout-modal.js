@@ -35,17 +35,17 @@ class LayoutModal extends Component {
 		let tabs = [
 			{
 				name: 'ab-layout-tab-sections',
-				title: __( 'Sections', 'atomic-blocks' ),
+				title: __( 'Sections', 'beans-blocks-' ),
 				className: 'ab-layout-tab-sections'
 			},
 			{
 				name: 'ab-layout-tab-layouts',
-				title: __( 'Layouts', 'atomic-blocks' ),
+				title: __( 'Layouts', 'beans-blocks-' ),
 				className: 'ab-layout-tab-layouts'
 			},
 			{
 				name: 'ab-layout-tab-favorites',
-				title: __( 'Favorites', 'atomic-blocks' ),
+				title: __( 'Favorites', 'beans-blocks-' ),
 				className: 'ab-layout-tab-favorites'
 			}
 		];
@@ -53,7 +53,7 @@ class LayoutModal extends Component {
 		if ( this.props.context.reusableBlocks.length ) {
 			tabs.push({
 				name: 'ab-layout-tab-reusable-blocks',
-				title: __( 'Reusable Blocks', 'atomic-blocks' ),
+				title: __( 'Reusable Blocks', 'beans-blocks-' ),
 				className: 'ab-layout-tab-reusable-blocks'
 			});
 		}
@@ -70,13 +70,13 @@ class LayoutModal extends Component {
 						modalOpen: true
 					}) }
 				>
-					{ __( 'Layout Library', 'atomic-blocks' ) }
+					{ __( 'Layout Library', 'beans-blocks-' ) }
 				</Button>
 				{ this.state.modalOpen ?
 					<Modal
 						key={ 'layout-modal-modal-component-' + this.props.clientId }
 						className="ab-layout-modal"
-						title={ __( 'Layout Selector', 'atomic-blocks' ) }
+						title={ __( 'Layout Selector', 'beans-blocks-' ) }
 						onRequestClose={ () => this.setState({
 							modalOpen: false,
 							currentTab: null
@@ -85,19 +85,19 @@ class LayoutModal extends Component {
 						 <div className="ab-layout-modal-footer">
 							<Dashicon icon={ 'editor-help' } />
 							<a
-								href={ 'https://github.com/studiopress/atomic-blocks/wiki/Layouts-Block#adding-custom-sections-and-layouts-to-the-library' }
+								href={ 'https://github.com/studiopress/beans-blocks-/wiki/Layouts-Block#adding-custom-sections-and-layouts-to-the-library' }
 								target="_blank"
-							>{ __( 'Add Custom Layouts', 'atomic-blocks' ) }</a>
+							>{ __( 'Add Custom Layouts', 'beans-blocks-' ) }</a>
 							<span>&middot;</span>
 							<a
-								href={ 'https://github.com/studiopress/atomic-blocks/wiki/Reusable-Blocks' }
+								href={ 'https://github.com/studiopress/beans-blocks-/wiki/Reusable-Blocks' }
 								target="_blank"
-							>{ __( 'Reusable Blocks', 'atomic-blocks' ) }</a>
+							>{ __( 'Reusable Blocks', 'beans-blocks-' ) }</a>
 							<a
 								href={ 'https://wpengine.co1.qualtrics.com/jfe/form/SV_bj6kzZDz1Egcc17' }
 								target="_blank"
 								className="ab-pro-feedback"
-							><Dashicon icon={ 'admin-comments' } /> { __( 'Send Feedback', 'atomic-blocks' ) }</a>
+							><Dashicon icon={ 'admin-comments' } /> { __( 'Send Feedback', 'beans-blocks-' ) }</a>
 						</div>
 						<TabPanel
 							key={ 'layout-modal-tabpanel-' + this.props.clientId }
@@ -110,7 +110,7 @@ class LayoutModal extends Component {
 							{
 								( tab ) => {
 
-									let tabContent = __( 'Default tab content', 'atomic-blocks' );
+									let tabContent = __( 'Default tab content', 'beans-blocks-' );
 
 									if ( tab.name ) {
 										if ( 'ab-layout-tab-sections' === tab.name ) {

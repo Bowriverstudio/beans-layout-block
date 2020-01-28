@@ -5,7 +5,7 @@
  * @package AtomicBlocks
  */
 
-use UIKIT3\Gutenberg\Layouts\Component_Registry;
+namespace Beans\Layout\Block;
 
 /**
  * Registers layout components with the Component Registry

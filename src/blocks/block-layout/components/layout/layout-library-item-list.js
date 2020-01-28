@@ -49,7 +49,7 @@ export default class LayoutLibraryItemList extends Component {
 								}) }
 								target="_blank"
 							>
-								{ __( 'Edit', 'atomic-blocks' ) }
+								{ __( 'Edit', 'beans-blocks-' ) }
 							</a>
 						</span>
 					</div>
