@@ -1,16 +1,15 @@
-This contains boiler plate code related to setting up a Gutenberg Block
+This Block is experimental at this phase, and based from block-layout https://atomicblocks.com 
 
-Step 1# Copy Block To new Plugin
-Step 2# Remove .git folder if exists
-Step 3# Find and Replace
-
-- Namespace:   BRS\Gutenberg\BoilerPlate
-- Plugin Name: Gutenberg BoilerPlate
-- enqueue_prefix  -  'brs-gutenberg-boilerplate-'
-
+By itself this block currently does not do much.
 
 ------------------------------
 
 ```npm init```
 ```npm start```
 
+
+
+--------
+#Changelog
+
+- Changed from boiler plate to this block. 

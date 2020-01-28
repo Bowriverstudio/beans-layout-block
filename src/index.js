@@ -1,1 +1,1 @@
-import './blocks/sample'
+import './blocks/block-layout'

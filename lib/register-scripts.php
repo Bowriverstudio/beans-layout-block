@@ -1,5 +1,5 @@
 <?php
-namespace BRS\Gutenberg\BoilerPlate;
+namespace Beans\Layout\Block;
 
 /**
  * Private function that returns a unque prefix for this plugin.
@@ -7,7 +7,7 @@ namespace BRS\Gutenberg\BoilerPlate;
  * @return string
  */
 function _get_enqueue_prefix(){
-    return 'brs-gutenberg-boilerplate-';
+    return 'beans-layout-block-';
 }
 
 add_action('enqueue_block_editor_assets', __NAMESPACE__.'\enqueue_block_editor_assets');

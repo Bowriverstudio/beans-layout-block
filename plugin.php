@@ -1,15 +1,15 @@
 <?php
 /**
- * BRS\Gutenberg\BoilerPlate
+ * Beans\Layout\Block
  *
- * @package      BRS\Gutenberg\BoilerPlate
+ * @package      Beans\Layout\Block
  * @author       Maurice Tadros, Yaidel Ferralize, Disnel Rodriguez
  * @license      GPL-2.0+
  *
  * @wordpress-plugin
- * Plugin Name:       Debug Toolkit
+ * Plugin Name:       Bean Layout Block
  * Plugin URI:        na
- * Description:       This plugin is not meant to be used, simply a starting point.
+ * Description:       This plugin is
  * Version:           1.0.0
  * Author:            Maurice Tadros, Yaidel Ferralize, Disnel Rodriguez
  * Author URI:        https://bowriverstudio.com
@@ -21,7 +21,7 @@
  */
 
 
-namespace BRS\Gutenberg\BoilerPlate;
+namespace Beans\Layout\Block;
 
 if (!defined('ABSPATH')) {
     exit('Hello, Hello, Hello, what\'s going on here then?');
@@ -62,3 +62,12 @@ function _get_plugin_url() {
 // Enqueue JS and CSS.
  include __DIR__ . '/lib/register-scripts.php';
 
+
+require_once __DIR__ . '/lib/layout-functions.php';
+require_once __DIR__ . '/lib/class-component-registry.php';
+require_once __DIR__ . '/lib/register-layout-components.php';
+
+/**
+ * REST API Endpoints for Layouts.
+ */
+require_once __DIR__ . '/lib/layout-endpoints.php';

@@ -31,7 +31,8 @@
     "@wordpress/i18n": "^3.6.1",
     "@wordpress/plugins": "^2.7.2",
     "prop-types": "^15.7.2",
-    "proptypes": "^1.1.0"
+    "proptypes": "^1.1.0",
+    "react-lazy-load": "^3.0.13"
   },
   "directories": {
     "lib": "lib"
