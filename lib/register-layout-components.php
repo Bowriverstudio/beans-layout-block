@@ -28,7 +28,6 @@ function register_components() {
                         $data = require $_file;
                     }
                     atomic_blocks_register_layout_component($data);
-
                 }
             }
         }

@@ -71,3 +71,7 @@ require_once __DIR__ . '/lib/register-layout-components.php';
  * REST API Endpoints for Layouts.
  */
 require_once __DIR__ . '/lib/layout-endpoints.php';
+
+
+//Sample uncomment for testing only.
+//require_once __DIR__ . '/beans-layout-block/register-layout-components.php';
