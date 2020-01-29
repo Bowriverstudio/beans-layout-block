@@ -74,4 +74,4 @@ require_once __DIR__ . '/lib/layout-endpoints.php';
 
 
 //Sample uncomment for testing only.
-//require_once __DIR__ . '/beans-layout-block/register-layout-components.php';
+//require_once __DIR__ . '/config/beans-layout-block/register-layout-components.php';
