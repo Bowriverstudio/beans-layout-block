@@ -9,7 +9,7 @@
  * @wordpress-plugin
  * Plugin Name:       Bean Layout Block
  * Plugin URI:        na
- * Description:       This plugin is
+ * Description:       This plugin sim
  * Version:           1.0.0
  * Author:            Maurice Tadros, Yaidel Ferralize, Disnel Rodriguez
  * Author URI:        https://bowriverstudio.com
